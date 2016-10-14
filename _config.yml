@@ -31,7 +31,7 @@ disqus: mydisqus
 # if you don't have any of social below, comment the line
 facebook: profile.php?id=100011366062918
 #twitter: mytwitter
-google: /u/0/109664610123939361284
+#google: /u/0/109664610123939361284
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
@@ -45,7 +45,7 @@ email: flymejlg@gmail.com
 authors:
     potatofly:
         name: Flyme LG
-        bio: A Man who travels the world eating noodles
+        bio: Just do it One day will be successful
         external-image: false
         picture: assets/images/profile.jpg
         twitter: johndoe
