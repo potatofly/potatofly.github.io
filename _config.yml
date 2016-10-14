@@ -26,7 +26,8 @@ highlighter: rouge
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, set to false
-disqus: mydisqus
+#disqus: mydisqus
+disqus: false
 
 # if you don't have any of social below, comment the line
 facebook: profile.php?id=100011366062918
