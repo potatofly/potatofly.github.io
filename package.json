@@ -1,14 +1,14 @@
 {
-  "name": "indigo",
+  "name": "potatofly",
   "version": "1.0.0",
-  "homepage": "https://github.com/sergiokopplin/indigo#readme",
+  "homepage": "https://github.com/potatofly/potatofly.github.io#readme",
   "license": "MIT",
   "bugs": {
-      "url": "https://github.com/sergiokopplin/indigo/issues"
+      "url": "https://github.com/potatofly/potatofly.github.io/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergiokopplin/indigo.git"
+    "url": "git+https://github.com/potatofly/potatofly.github.io.git"
   },
   "scripts": {
     "build": "bundle exec jekyll build",
