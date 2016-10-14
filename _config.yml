@@ -1,5 +1,5 @@
 # main text of home
-name: John Doe
+name: Flyme LG
 bio: A Man who travels the world eating noodles
 
 # twitter summary info
@@ -10,7 +10,7 @@ description: A blog about technology and stuff related
 external-image: false
 picture: assets/images/profile.jpg
 
-url: https://koppl.in/indigo
+url: https://potatofly.github.io/
 # your url: http://USERNAME.github.io
 
 permalink: /:title/
@@ -29,22 +29,22 @@ highlighter: rouge
 disqus: mydisqus
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+facebook: https://www.facebook.com/profile.php?id=100011366062918
+#twitter: mytwitter
 # google: mygoogle
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
-youtube: myyoutube
-spotify: myspotify
+#youtube: myyoutube
+#spotify: myspotify
 github: mygithub
-medium: medium
-vimeo: myvimeo
-email: myemail@gmail.com
+#medium: medium
+#vimeo: myvimeo
+email: flymejlg@gmail.com
 
 authors:
-    johndoe:
-        name: John Doe
+    potatofly:
+        name: Flyme LG
         bio: A Man who travels the world eating noodles
         external-image: false
         picture: assets/images/profile.jpg
