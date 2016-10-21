@@ -25,11 +25,27 @@ description: 整理的一些常用工具及技巧
 ## Git基本用法
 
 ### Git配置
-* git config --global user.name  查看用户名
+* git config --global user.name   查看用户名
 * git config --global user.email  查看邮箱
 * git config --global user.name potatofly   修改用户名
 * git config --global user.email flymejlg@gmail.com   修改邮箱
 
+### 使用Git命令提交代码
+* git status   获取当前更改状态
+* git add .    提交所有更改状态到暂存区  单个更改提交（git add 修改文件名）
+* git diff     查看当前目录具体更改
+* git commit -m "提交说明"   提交代码
+* git push ssh://liangguo.ji@10.128.161.209:29418/mtk8783m/platform/vendor/mediatek.git HEAD:refs/for/Lite8783Base push到远程库的相应分支
+
+### 查看具体代码分支
+1. 整套代码分支查看
+ * cd 代码目录/.repo
+ * 查看 manifests 文件可以看到代码的所有分支情况
+2. 代码某个目录分支查看
+ * cd code-Lite/bootable/recovery   进入查看目录
+ * ：～.../recovery$ git remote -v   查看当前代码模块提交分支
+ * origin	git@172.26.12.184:mtk8783m/platform/bootable/recovery.git (fetch) 执行上述命令后显示的分支情况
+ 
 ---
 
 ## Ubuntu基本使用
