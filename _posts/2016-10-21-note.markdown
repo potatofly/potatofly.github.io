@@ -47,7 +47,7 @@ description: 整理的一些常用工具及技巧
  * origin	git@172.26.12.184:mtk8783m/platform/bootable/recovery.git (fetch) 执行上述命令后显示的分支情况
  
 ### Git相关教程
-* http://jlord.us/git-it/challenges/get_git.html "GitHub 团队美女写的一套Git使用教程"
+* http://jlord.us/git-it/challenges/get_git.html/ "GitHub 团队美女写的一套Git使用教程"
  
 ---
 
