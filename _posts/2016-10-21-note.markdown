@@ -1,0 +1,100 @@
+---
+title: "学习笔记整理"
+layout: post
+date: 2016-10-21 14:57
+image: /assets/images/markdown.jpg
+headerImage: false
+tag: note
+blog: true
+author: potatofly
+description: 整理的一些常用工具及技巧
+---
+
+## 描述
+
+你可以通过点击下面的链接看你感兴趣的内容
+
+###分类
+- [Git 基本用法]
+- [Ubuntu 基本使用]
+- [Tips]
+
+---
+
+##Git 基本用法
+
+
+
+
+
+
+
+
+
+
+ubuntu使用
+
+
+---
+
+##Tips
+
+
+
+
+hhhbfjsdfb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+git jiben yongfa 
+
+---
+
+##Ubuntu 基本使用
+
