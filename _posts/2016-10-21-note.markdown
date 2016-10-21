@@ -16,10 +16,6 @@ description: 整理的一些常用工具及技巧
 
 ### 分类
 
- <span id = "git">Git基本用法</span>
- <span id = "ubuntu">Ubuntu基本使用</span>
- <span id = "tips">Tips</span>
-
 - [Git基本用法](#git)
 - [Ubuntu基本使用](#ubuntu)
 - [Tips](#tips)
