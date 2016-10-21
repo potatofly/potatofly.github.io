@@ -16,17 +16,17 @@ description: 整理的一些常用工具及技巧
 
 ### 分类
 
- <span id = "git">Git</span>
- <span id = "ubuntu">Ubuntu</span>
+ <span id = "git">Git基本用法</span>
+ <span id = "ubuntu">Ubuntu基本使用</span>
  <span id = "tips">Tips</span>
 
-- [Git](#git)
-- [Ubuntu](#ubuntu)
+- [Git基本用法](#git)
+- [Ubuntu基本使用](#ubuntu)
 - [Tips](#tips)
 
 ---
 
-## Git 基本用法
+## Git基本用法
 哈哈哈哈哈哈哈哈哈哈哈
 哈哈哈哈哈哈哈哈哈哈哈
 哈哈哈哈哈哈哈哈哈哈哈
@@ -177,7 +177,7 @@ fffff
 哈哈哈哈哈哈哈哈哈哈哈
 ---
 
-## Ubuntu 基本使用
+## Ubuntu基本使用
 
 
 呵呵呵呵呵呵呵呵呵呵呵
