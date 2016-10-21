@@ -15,8 +15,8 @@ description: 整理的一些常用工具及技巧
 你可以通过点击下面的链接看你感兴趣的内容
 
 ### 分类
-- [Git 基本用法](#Git 基本用法)
-- [Ubuntu 基本使用](#Ubuntu 基本使用)
+- [Git 基本用法](#Git-基本用法)
+- [Ubuntu 基本使用](#Ubuntu-基本使用)
 - [Tips](#Tips)
 
 ---
@@ -47,13 +47,25 @@ description: 整理的一些常用工具及技巧
 
 
 
+的
+d
 
 
 
 
+fffff
+
+
+规格国
 
 
 基督教vhjvj
+
+
+
+
+广告费如果
+
 ---
 
 ## Ubuntu 基本使用
