@@ -14,14 +14,14 @@ description: 整理的一些常用工具及技巧
 
 你可以通过点击下面的链接看你感兴趣的内容
 
-###分类
+### 分类
 - [Git 基本用法](#Git 基本用法)
 - [Ubuntu 基本使用](#Ubuntu 基本使用)
 - [Tips](#Tips)
 
 ---
 
-##Git 基本用法
+## Git 基本用法
 
 
 
@@ -37,7 +37,7 @@ ubuntu使用
 
 ---
 
-##Tips
+## Tips
 
 
 
@@ -96,5 +96,5 @@ git jiben yongfa
 
 ---
 
-##Ubuntu 基本使用
+## Ubuntu 基本使用
 
