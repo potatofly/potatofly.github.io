@@ -9,3 +9,7 @@ blog: true
 author: potatofly
 description: remount failed describe
 ---
+
+## 描述
+
+    最近调试安卓平板时遇到一个问题，每次刷服务上的daily版本时，adb root 总是无法adb remount。但是刷本地版本时能够remount。
