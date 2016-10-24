@@ -3,7 +3,7 @@ title: "Android userdebug 版本无法remount问题"
 layout: post
 date: 2016-10-24 16:57
 image: /assets/images/markdown.jpg
-headerImage: true
+headerImage: false
 tag: android
 blog: true
 author: potatofly
@@ -48,6 +48,19 @@ The same as user, except:
 * ro.debuggable=1
 * adb is enabled by default. 
  {% endhighlight %}
+ 
+---
+
+### 问题解决
+
+根据上述官方文档我们可以知道userdebug版本拥有的权限比eng版本小，因此出现无法remount的问题。问题的解决也比较方便只要执行两句adb命令就能够解决上述问题。
+
+* 首先执行 adb disable-verity 命令
+* 其次执行 adb reboot 重启
+
+好了两行命令解决adb remount 问题，另外特别提醒一下如果遇到无法 adb disable-verity 那么可能是你的 adb 版本太 out 了，你可以从网上下最新的，这里就不给出链接了。如果你编译过整套安卓源代码那么可以直接从 编译 out 目录下获取最新的 adb 拿博主的 MTK 平台代码举例：
+
+* /code-Litem/out/host/linux-x86/bin$  adb 就在这个目录下
 
 
 
