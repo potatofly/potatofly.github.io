@@ -4,7 +4,7 @@ layout: post
 date: 2016-10-25 17:50
 image: /assets/images/markdown.jpg
 headerImage: false
-tag: note
+tag: driver
 blog: true
 author: potatofly
 description: TP 报点
@@ -17,9 +17,11 @@ description: TP 报点
 ### 解决
 
 1. 使用如下命令找出 mtk-tpd 对应的event设备
+
 * adb shell getevent -i
 
 2. 使用此设备读取 TouchPanel上报的事件
+
 * adb shell get event /dev/input/event3
 * 每一行有三个数值,通过查询
 * /code-Litem/kernel-3.18/include/uapi/linux/input.h
