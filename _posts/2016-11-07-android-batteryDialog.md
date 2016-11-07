@@ -12,7 +12,7 @@ description: android framework 层添加低电量弹框提示
 
 ## 描述
 
-最近项目上提出了一个低电弹框需求，而项目上又恰好缺少framework层的开发，很快项目经理就物色上了我ps:我来做驱动前一直做的是应用的开发，对framework层代码也了解一些。项目经理都说话了而且最近我头上问题也不是特别的就爽快的答应了。在一些前辈的提示下我也圆满的完成了项目需求，现在在此简单梳理一下已做备忘。
+最近项目上提出了一个低电弹框需求，而项目上又恰好缺少framework层的开发，很快项目经理就物色上了我ps:我来做驱动前一直做的是应用的开发，对framework层代码也了解一些。项目经理都说话了而且最近我头上问题也不是特别多就爽快的答应了。在一些前辈的帮助下我也圆满的完成了项目需求，现在在此简单梳理一下以做备忘。
 
 ### 项目需求分析
 
@@ -39,11 +39,7 @@ description: android framework 层添加低电量弹框提示
  {% highlight raw %}
 private void showWaringDialog() {
 
-        //if charging dismiss dialog and not show warning
-
-		assert mBatteryProps !=null;
-
-        if (mBatteryProps.batteryStatus == 2){
+        if (mBatteryProps.batteryStatus == 2){  //如果在充电状态就不显示警告弹框
             if (mCriticalDialog != null && mCriticalDialog.isShowing()) mCriticalDialog.dismiss();
             if (mUrgencyDialog != null && mUrgencyDialog.isShowing()) mUrgencyDialog.dismiss();
 			if (mRangeDialog!= null && mRangeDialog.isShowing()) mRangeDialog.dismiss();
@@ -53,7 +49,7 @@ private void showWaringDialog() {
             return;
         }
 
-        if (mBatteryProps.batteryLevel == BATTERY_CRITICAL_LEVEL) {
+        if (mBatteryProps.batteryLevel == BATTERY_CRITICAL_LEVEL) {  //电量等于1%时弹出警告框
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
@@ -73,7 +69,7 @@ private void showWaringDialog() {
         }
 
 
-		if (mBatteryProps.batteryLevel < BATTERY_URGENCY_LEVEL){
+		if (mBatteryProps.batteryLevel < BATTERY_URGENCY_LEVEL){  //电量大于1%小于10%时显示的低于10%电量警告框
             mHandler.post(new Runnable() {
                 @Override
                 public void run() {
@@ -87,15 +83,15 @@ private void showWaringDialog() {
 						}
 
                     if ((mRangeDialog != null && mRangeDialog.isShowing()) || !isNeedShowUrgencyWarningDialog || !isNeedShowRangeDialog)
-                        return;
-
+                        return;            //这部分逻辑做过多次优化，当电量从10%降到低于10%的过程中
+			//在用户没有交互取消弹框情况下弹框会从10%提示替换为低于10%的提示
                     mRangeDialog= new WarningDialog(mContext, BATTERY_BELOW_LEVEL);
                     mRangeDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
                     mRangeDialog.show();
                     isNeedShowRangeDialog= false;
                  }
              });
-         } else if (mBatteryProps.batteryLevel == BATTERY_URGENCY_LEVEL){
+         } else if (mBatteryProps.batteryLevel == BATTERY_URGENCY_LEVEL){   //10%电量提示框
 				mHandler.post(new Runnable() {
                 @Override
                 public void run() {
