@@ -32,6 +32,10 @@ description: android framework 层添加低电量弹框提示
 * 判定条件：通过BatteryProperties这个类我们可以获取电量信息（电量百分比）和电池充电状态通过查找/code-Litem/frameworks/base/core/java/android/BatteryManager.java我们可以得出充电状态对应的值是public static final int BATTERY_STATUS_CHARGING = 2
 * 了解Dialog弹出时机通过网上查找资源和自己查看源码可以在/code-Litem/frameworks/base/services/core/java/com/android/server/BatteryService.java 里面的主要方法private void processValuesLocked(boolean force)中实现这一功能即在此方法中判断逻辑并调用方法。
 
+### 编译重点
+* mmm frameworks/base/core/res/ -B 先编译资源
+* make update-api   再更新api
+* mmm frameworks/base/services/  最后使用资源
 
 ###  具体实现
 
